@@ -10,4 +10,5 @@ import Foundation
 struct RandomPicture: Decodable {
     let id: String
     let download_url: String
+    let url: String
 }

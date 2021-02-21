@@ -97,7 +97,7 @@ struct ContentView: View {
                 DispatchQueue.main.async {
                     
                     // Assign the result to the "someText" stored property
-                    downloadURL = decodedPictureData.download_url
+                    downloadURL = decodedPictureData.url
                     
                 }
                 
