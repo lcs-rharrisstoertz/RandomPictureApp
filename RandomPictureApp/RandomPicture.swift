@@ -9,8 +9,5 @@ import Foundation
 
 struct RandomPicture: Decodable {
     let id: String
-    let author: String
-    let width: Int
-    let height: Int
     let download_url: String
 }
