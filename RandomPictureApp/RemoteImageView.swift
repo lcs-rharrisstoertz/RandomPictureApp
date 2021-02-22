@@ -23,6 +23,9 @@ struct RemoteImageView: View {
         
         // A standard Image view, initialized with the image property
         Image(uiImage: image)
+            .resizable()
+            .scaledToFit()
+            .padding(.horizontal)
             .onAppear {
                 // 1. Create a URL instance from the image URL
                 // 2. Load the raw data from this URL

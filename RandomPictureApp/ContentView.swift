@@ -16,19 +16,20 @@ struct ContentView: View {
     
     //MARK: Computed properties
     var body: some View {
-        Form {
-            Section(header: Text("Enter image specifications")){
-                TextField("Height", text: $imageHeight)
-                    .keyboardType(.numberPad)
-                TextField("Width", text: $imageWidth)
-                    .keyboardType(.numberPad)
-                Button("Get picture") {
-                    fetchPicture()
+        GeometryReader {geometry in
+            Form {
+                Section(header: Text("Enter image specifications")){
+                    TextField("Height", text: $imageHeight)
+                        .keyboardType(.numberPad)
+                    TextField("Width", text: $imageWidth)
+                        .keyboardType(.numberPad)
+                    Button("Get picture") {
+                        fetchPicture()
+                    }
                 }
-            }
-            Section(header: Text("Image")){
-                RemoteImageView(imageUrl: downloadURL)
-                    .frame(width: 100, height: 100)
+                Section(header: Text("Image")){
+                    RemoteImageView(imageUrl: downloadURL)
+                }
             }
         }
     }
