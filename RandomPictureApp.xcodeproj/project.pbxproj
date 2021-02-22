@@ -12,6 +12,7 @@
 		25034CAC25E2F9CF00304420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25034CAB25E2F9CF00304420 /* Assets.xcassets */; };
 		25034CAF25E2F9CF00304420 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25034CAE25E2F9CF00304420 /* Preview Assets.xcassets */; };
 		25034CB825E2FA0600304420 /* RandomPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25034CB725E2FA0600304420 /* RandomPicture.swift */; };
+		25034D2025E41CE400304420 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25034D1F25E41CE400304420 /* RemoteImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		25034CAE25E2F9CF00304420 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25034CB025E2F9CF00304420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25034CB725E2FA0600304420 /* RandomPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPicture.swift; sourceTree = "<group>"; };
+		25034D1F25E41CE400304420 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				25034CB025E2F9CF00304420 /* Info.plist */,
 				25034CAD25E2F9CF00304420 /* Preview Content */,
 				25034CB725E2FA0600304420 /* RandomPicture.swift */,
+				25034D1F25E41CE400304420 /* RemoteImageView.swift */,
 			);
 			path = RandomPictureApp;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				25034CAA25E2F9CA00304420 /* ContentView.swift in Sources */,
 				25034CA825E2F9CA00304420 /* RandomPictureAppApp.swift in Sources */,
+				25034D2025E41CE400304420 /* RemoteImageView.swift in Sources */,
 				25034CB825E2FA0600304420 /* RandomPicture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

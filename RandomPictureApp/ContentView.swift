@@ -26,9 +26,9 @@ struct ContentView: View {
                     fetchPicture()
                 }
             }
-            Section(header: Text("Image URL")){
-                Text(downloadURL)
-                    .padding()
+            Section(header: Text("Image")){
+                RemoteImageView(imageUrl: downloadURL)
+                    .frame(width: 100, height: 100)
             }
         }
     }
@@ -88,7 +88,7 @@ struct ContentView: View {
                 // Now, update the UI on the main thread
                 DispatchQueue.main.async {
                     // Assign the result to the "downloadURL" stored property
-                    downloadURL = decodedPictureData.url
+                    downloadURL = decodedPictureData.download_url
                 }
             } else {
                 print("Could not decode JSON into an instance of the RandomPicture structure.")
